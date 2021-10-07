@@ -6,27 +6,7 @@ const chalk = require("chalk");
 
 const dispatcher = require("./dispatcher");
 
-const provs = `aws.cloudfront
-aws.apigateway-us-east-1
-heroku
-heroku.apps
-aws.lambda-us-east-1
-datadog
-aws.route53privatedns-us-east-1
-mongodb
-auth0.749624
-auth0
-twilio
-atlassian
-newrelic
-pendo
-sendgrid
-cloudflare
-sentry
-hashicorp
-github
-snowflake
-npmjs`;
+const provs = ``;
 
 const dispatch = async (providers) => {
   const providerObj = dispatcher.dispatchProviders(providers);
